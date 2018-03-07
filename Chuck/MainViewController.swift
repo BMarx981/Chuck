@@ -8,11 +8,15 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+class MainViewController: NSViewController {
 
+    var server = ProxyServer()
+
+    @IBOutlet var textArea: NSTextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +26,15 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func clearButton(_ sender: NSButton) {
+        
+    }
+    @IBAction func recordButton(_ sender: NSButton) {
+        
+    }
+    @IBAction func editButton(_ sender: NSButton) {
+        
+    }
 
 }
 
