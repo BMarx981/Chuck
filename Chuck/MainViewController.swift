@@ -8,7 +8,9 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class MainViewController: NSViewController, NSTextFieldDelegate {
+
+    @IBOutlet weak var portTextfield: NSTextFieldCell!
 
     var server = ProxyServer()
 
@@ -22,7 +24,8 @@ class MainViewController: NSViewController {
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            server.port = Int((portTextfield?.placeholderString)!)!
+            
         }
     }
 
@@ -35,6 +38,7 @@ class MainViewController: NSViewController {
     @IBAction func editButton(_ sender: NSButton) {
         
     }
+    
 
 }
 

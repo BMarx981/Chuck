@@ -710,7 +710,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="500" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgm-JP-Nnl">
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" horizontalScrollElasticity="allowed" translatesAutoresizingMaskIntoConstraints="NO" id="Lgm-JP-Nnl">
                                 <rect key="frame" x="240" y="0.0" width="260" height="233"/>
                                 <clipView key="contentView" id="PZn-4k-Bqt">
                                     <rect key="frame" x="1" y="1" width="258" height="231"/>
@@ -768,7 +768,7 @@
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SME-g4-OZn">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="17"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="oqS-3e-KXV">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" placeholderString="Network call" id="oqS-3e-KXV">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -904,6 +904,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="portTextfield" destination="BZC-5V-CxZ" id="Fpp-Qg-4Ck"/>
                         <outlet property="textArea" destination="R1s-fh-TVK" id="Ray-gs-oZs"/>
                     </connections>
                 </viewController>
