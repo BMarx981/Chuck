@@ -21,6 +21,8 @@ class MainViewController: NSViewController, NSTextFieldDelegate {
         
         // Do any additional setup after loading the view.
     }
+    
+    var outlineView = NSOutlineView()
 
     override var representedObject: Any? {
         didSet {
