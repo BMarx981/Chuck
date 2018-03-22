@@ -11,7 +11,7 @@ import Cocoa
 class MainViewController: NSViewController, NSTextFieldDelegate {
 
     @IBOutlet weak var portTextfield: NSTextFieldCell!
-
+    
     var server = ProxyServer()
 
     @IBOutlet var textArea: NSTextView!
@@ -24,13 +24,14 @@ class MainViewController: NSViewController, NSTextFieldDelegate {
 
     override var representedObject: Any? {
         didSet {
-            server.port = Int((portTextfield?.placeholderString)!)!
-            
+            if let portNum = portTextfield?.stringValue {
+                server.port = Int(portNum)!
+            }
         }
     }
 
     @IBAction func clearButton(_ sender: NSButton) {
-        
+        textArea.string = ""
     }
     @IBAction func recordButton(_ sender: NSButton) {
         
@@ -38,7 +39,5 @@ class MainViewController: NSViewController, NSTextFieldDelegate {
     @IBAction func editButton(_ sender: NSButton) {
         
     }
-    
-
 }
 
