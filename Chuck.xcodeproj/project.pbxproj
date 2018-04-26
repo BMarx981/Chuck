@@ -12,6 +12,7 @@
 		D347893E2035291A0096F0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D347893D2035291A0096F0D7 /* Assets.xcassets */; };
 		D34789412035291A0096F0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D347893F2035291A0096F0D7 /* Main.storyboard */; };
 		D347894A2036454B0096F0D7 /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34789492036454B0096F0D7 /* ProxyServer.swift */; };
+		D3E3DC602065BB6D005B26F8 /* NetworkEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E3DC5F2065BB6D005B26F8 /* NetworkEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D34789422035291A0096F0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D34789432035291A0096F0D7 /* Chuck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Chuck.entitlements; sourceTree = "<group>"; };
 		D34789492036454B0096F0D7 /* ProxyServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyServer.swift; sourceTree = "<group>"; };
+		D3E3DC5F2065BB6D005B26F8 /* NetworkEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				D34789392035291A0096F0D7 /* AppDelegate.swift */,
 				D347893B2035291A0096F0D7 /* MainViewController.swift */,
+				D3E3DC5F2065BB6D005B26F8 /* NetworkEvent.swift */,
 				D34789492036454B0096F0D7 /* ProxyServer.swift */,
 				D347893D2035291A0096F0D7 /* Assets.xcassets */,
 				D347893F2035291A0096F0D7 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D347893C2035291A0096F0D7 /* MainViewController.swift in Sources */,
+				D3E3DC602065BB6D005B26F8 /* NetworkEvent.swift in Sources */,
 				D347893A2035291A0096F0D7 /* AppDelegate.swift in Sources */,
 				D347894A2036454B0096F0D7 /* ProxyServer.swift in Sources */,
 			);

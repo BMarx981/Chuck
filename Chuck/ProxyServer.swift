@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol ProxyServerDelegate {
+    func portNumberDidUpdate(_ controller: ProxyServer, portNumber: Int)
+}
+
 class ProxyServer {
     
     var inputStream: InputStream!
@@ -28,6 +32,16 @@ class ProxyServer {
     
     func callRecieved() {
         
+    }
+    
+    func openStream() {
+//        inputStream.open()
+//        outputStream.open()
+    }
+    
+    func closeStream() {
+//        inputStream.close()
+//        outputStream.close()
     }
     
     func sendCall() {
